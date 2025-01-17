@@ -6,9 +6,8 @@ pub enum CatStatus {
     Death,
 }
 
-#[test]
-fn melapelas(){
-    assert_eq!(10+10,10);
+fn melapelas(a,){
+    a + b
 }
 
 // impl PartialEq for CatStatus{
@@ -19,7 +18,7 @@ pub struct Cat {
     pub name: String,
     // status: String,
     pub status: CatStatus, // pero agregar aqui
-    pub stats: Stats,  
+    pub stats: Stats,
     //sexuality: gai,    // cuando se implemente
                        // alive: bool
 }
@@ -32,7 +31,7 @@ pub struct Cat {
 // }
 #[cfg(test)]
 impl Cat {
-    pub fn new(name: String) -> Cat { // 
+    pub fn new(name: String) -> Cat { //
         Cat {
             name,
             status: CatStatus::Alive,
@@ -61,12 +60,6 @@ impl Cat {
     pub fn feed(&mut self) {
         self.stats.feed();
     }
-
-    // #[test]
-    // fn test_feed() {
-    //     let cat2 = Cat::new(String::from("test"));
-    //     assert_eq!(cat2.feed(),())
-    // }
 }
 
 pub struct Stats {
@@ -103,12 +96,6 @@ fn randnum() -> u8 {
     let rand_number: u8 = rand::thread_rng().gen_range(1..=10);
 
     rand_number
-}
-
-#[test]
-fn test_randmun() {
-    // let cat2 = Cat::new(String::from("test"));
-    assert_eq!(randnum(),randnum())
 }
 
 #[cfg(test)]
