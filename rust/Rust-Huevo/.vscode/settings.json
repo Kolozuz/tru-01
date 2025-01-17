@@ -1,10 +1,13 @@
 {
     "workbench.colorCustomizations": {
         "commandCenter.border": "#e7e7e799",
-        "titleBar.activeBackground": "#ef5023",
+        "titleBar.activeBackground": "#335ccc",
         "titleBar.activeForeground": "#e7e7e7",
-        "titleBar.inactiveBackground": "#ef502399",
+        "titleBar.inactiveBackground": "#1f07f799",
         "titleBar.inactiveForeground": "#e7e7e799"
     },
-    "peacock.color": "#ef5023"
+    "peacock.color": "#ef5023",
+    "rust-analyzer.linkedProjects": [
+        ".\\Cargo.toml"
+    ]
 }
